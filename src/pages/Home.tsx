@@ -1,4 +1,5 @@
 import dna from '../assets/dna.png';
+import { Link } from 'react-router';
 
 export default function Home() {
   return (
@@ -39,9 +40,12 @@ export default function Home() {
             secure.
           </p>
           <div>
-            <button className='bg-[#FF6F61] text-white py-2 px-4 rounded mr-4'>
+            <Link
+              to='/create'
+              className='bg-[#FF6F61] text-white py-2 px-4 rounded mr-4'
+            >
               Upload Your DNA
-            </button>
+            </Link>
             <button className='bg-[#FAD02E] text-black py-2 px-4 rounded'>
               View Result
             </button>
